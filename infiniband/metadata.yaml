@@ -1,0 +1,23 @@
+# Copyright 2022 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://juju.is/docs/sdk/metadata-reference
+
+name: hpc-infiniband
+
+display-name: |
+  HPC infiniband support
+
+description: |
+  Install, configure infiniband support.
+
+summary: |
+  Install, configure infiniband support.
+
+subordinate: yes
+
+requires:
+  node:
+    interface: subordinate
+    scope: container
