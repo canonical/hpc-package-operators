@@ -1,0 +1,23 @@
+# Copyright 2022 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://juju.is/docs/sdk/metadata-reference
+
+name: hpc-openmpi
+
+display-name: |
+  HPC openmpi support
+
+description: |
+  Install, configure openmpi support.
+
+summary: |
+  Install, configure openmpi support.
+
+subordinate: yes
+
+requires:
+  node:
+    interface: subordinate
+    scope: container
